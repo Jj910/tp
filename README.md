@@ -1,3 +1,6 @@
+# Welcome to `BlockBook`!
+| The address book for Minecrafters
+
 [![CI Status](https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg)](https://github.com/se-edu/addressbook-level3/actions)
 
 ![Ui](docs/images/Ui.png)
