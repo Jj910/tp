@@ -27,10 +27,11 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 [[homepage](https://www.tehdrink.com)]
 [[github](https://github.com/tehdrink)]
-[[portfolio](team/johndoe.md)]
+[[portfolio](team/tehdrink.md)]
 
-* Role: Developer (To be updated)
-* Responsibilities: (To be updated)
+* Role: Developer
+* Project Responsibilities: Lead, Scheduling and Tracking
+* Development Responsibilities: UI
 
 ### Johnny Doe
 
