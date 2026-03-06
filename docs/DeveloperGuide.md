@@ -556,7 +556,7 @@ Use case ends.
     - **Gamertag**: A Minecraft player’s in-game username.
     - **Modpack**: A collection of Minecraft modifications bundled together for gameplay.
     - **Server**: A multiplayer Minecraft world hosted online where players interact.
-- **Discord**: A popular instant messaging and VoIP social platform popular among gamers that allows communication through voice calls, video calls, text messaging, and media.
+- **Discord**: An instant messaging and VoIP social platform popular among gamers that allows communication through voice calls, video calls, text messaging, and media.
   Communication can be private or in virtual communities called "servers". See more [here](https://discord.com/).
 - **Contact**: A person that a user has saved in BlockBook, representing a Minecraft player they have met on servers. A contact typically includes details such as the player's gamertag, server name, and other attributes.
 - **CLI**: Command Line Interface, a way to interact with a computer program by typing commands into a console or terminal.
