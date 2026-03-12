@@ -52,7 +52,7 @@ public class JsonAdaptedGamerTest {
     public void toModelType_invalidGamerTag_throwsIllegalValueException() {
         JsonAdaptedGamer gamer =
                 new JsonAdaptedGamer(VALID_NAME, INVALID_GAMER_TAG);
-        String expectedMessage = Name.MESSAGE_CONSTRAINTS;
+        String expectedMessage = GamerTag.MESSAGE_CONSTRAINTS;
         assertThrows(IllegalValueException.class, expectedMessage, gamer::toModelType);
     }
 
