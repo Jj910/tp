@@ -2,7 +2,7 @@
   "baseUrl": "",
   "titlePrefix": "BlockBook",
   "titleSuffix": "The contacts app for Minecrafters",
-  "faviconPath": "images/SeEduLogo.png",
+  "faviconPath": "images/blockbook_icon.png",
   "style": {
     "codeTheme": "light"
   },
