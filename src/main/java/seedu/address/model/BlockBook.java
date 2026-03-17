@@ -1,7 +1,6 @@
 package seedu.address.model;
-import static java.util.Objects.requireNonNull;
-
 import java.util.List;
+import static java.util.Objects.requireNonNull;
 
 import javafx.collections.ObservableList;
 import seedu.address.commons.util.ToStringBuilder;
@@ -30,7 +29,7 @@ public class BlockBook implements ReadOnlyBlockBook {
     public BlockBook() {}
 
     /**
-     * Creates an AddressBook using the Gamers in the {@code toBeCopied}
+     * Creates an BlockBook using the Gamers in the {@code toBeCopied}
      */
     public BlockBook(ReadOnlyBlockBook toBeCopied) {
         this();
@@ -48,7 +47,7 @@ public class BlockBook implements ReadOnlyBlockBook {
     }
 
     /**
-     * Resets the existing data of this {@code AddressBook} with {@code newData}.
+     * Resets the existing data of this {@code BlockBook} with {@code newData}.
      */
     public void resetData(ReadOnlyBlockBook newData) {
         requireNonNull(newData);
