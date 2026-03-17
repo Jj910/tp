@@ -50,7 +50,8 @@ public class AddCommandTest {
         AddCommand addCommand = new AddCommand(validGamer);
         ModelStub modelStub = new ModelStubWithGamer(validGamer);
 
-        assertThrows(CommandException.class, AddCommand.MESSAGE_DUPLICATE_GAMERTAG, () -> addCommand.execute(modelStub));
+        assertThrows(CommandException.class,
+                AddCommand.MESSAGE_DUPLICATE_GAMERTAG, () -> addCommand.execute(modelStub));
     }
 
     @Test
