@@ -1,16 +1,17 @@
-package seedu.blockbook.testutil;
+package seedu.address.testutil;
 
-//import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_ADDRESS;
-//import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_EMAIL;
-import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_NAME;
-//import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_PHONE;
-//import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_TAG;
+//import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
+//import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_GAMERTAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
+//import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
+//import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
 //
 //import java.util.Set;
 
-import seedu.blockbook.logic.commands.AddCommand;
-import seedu.blockbook.logic.commands.EditCommand.EditGamerDescriptor;
-import seedu.blockbook.model.gamer.Gamer;
+import seedu.address.logic.commands.AddCommand;
+import seedu.address.logic.commands.EditCommand.EditGamerDescriptor;
+import seedu.address.model.gamer.Gamer;
 
 /**
  * A utility class for Gamer.
@@ -30,6 +31,7 @@ public class GamerUtil {
     public static String getGamerDetails(Gamer person) {
         StringBuilder sb = new StringBuilder();
         sb.append(PREFIX_NAME + person.getName().fullName + " ");
+        sb.append(PREFIX_GAMERTAG + person.getGamerTag().fullGamerTag + " ");
         // sb.append(PREFIX_PHONE + person.getPhone().value + " ");
         // sb.append(PREFIX_EMAIL + person.getEmail().value + " ");
 
@@ -48,4 +50,3 @@ public class GamerUtil {
         return sb.toString();
     }
 }
-

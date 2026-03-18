@@ -4,16 +4,16 @@ import static java.util.Objects.requireNonNull;
 import static seedu.blockbook.commons.util.AppUtil.checkArgument;
 
 /**
- * Represents a Person's name in the address book.
+ * Represents a Gamer's name in the address book.
  * Guarantees: immutable; is valid as declared in {@link #isValidGamerTag(String)}
  */
 public class GamerTag {
 
     public static final String MESSAGE_CONSTRAINTS =
-            "GamerTags should only contain alphanumeric characters and spaces, and it should not be blank";
+            "Gamertags should only contain, letters, numbers and underscore, and be at most 50 characters.";
 
     /**
-     * GamerTags should only be max 50 chars long, A-Z, a-z, numbers, no spaces,
+     * Gamertags should only be max 50 chars long, A-Z, a-z, numbers, no spaces,
      * and only allow the special character of underscore (_).
      */
     public static final String VALIDATION_REGEX = "^[a-zA-Z0-9_]{1,50}$";

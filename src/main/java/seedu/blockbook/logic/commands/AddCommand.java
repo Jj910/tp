@@ -1,17 +1,13 @@
-package seedu.blockbook.logic.commands;
+package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_ADDRESS;
-import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_EMAIL;
-import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_NAME;
-import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_PHONE;
-import static seedu.blockbook.logic.parser.CliSyntax.PREFIX_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_GAMERTAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 
-import seedu.blockbook.commons.util.ToStringBuilder;
-import seedu.blockbook.logic.Messages;
-import seedu.blockbook.logic.commands.exceptions.CommandException;
-import seedu.blockbook.model.Model;
-import seedu.blockbook.model.gamer.Gamer;
+import seedu.address.commons.util.ToStringBuilder;
+import seedu.address.logic.commands.exceptions.CommandException;
+import seedu.address.model.Model;
+import seedu.address.model.gamer.Gamer;
 
 /**
  * Adds a person to the address book.
@@ -20,23 +16,16 @@ public class AddCommand extends Command {
 
     public static final String COMMAND_WORD = "add";
 
-    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds a person to the address book. "
+    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds a person to Blockbook. "
             + "Parameters: "
             + PREFIX_NAME + "NAME "
-            + PREFIX_PHONE + "PHONE "
-            + PREFIX_EMAIL + "EMAIL "
-            + PREFIX_ADDRESS + "ADDRESS "
-            + "[" + PREFIX_TAG + "TAG]...\n"
+            + PREFIX_GAMERTAG + "GAMERTAG\n"
             + "Example: " + COMMAND_WORD + " "
-            + PREFIX_NAME + "John Doe "
-            + PREFIX_PHONE + "98765432 "
-            + PREFIX_EMAIL + "johnd@example.com "
-            + PREFIX_ADDRESS + "311, Clementi Ave 2, #02-25 "
-            + PREFIX_TAG + "friends "
-            + PREFIX_TAG + "owesMoney";
+            + PREFIX_NAME + "Herobrine "
+            + PREFIX_GAMERTAG + "ilovesteve";
 
-    public static final String MESSAGE_SUCCESS = "New person added: %1$s";
-    public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book";
+    public static final String MESSAGE_SUCCESS = "Contact added: %1$s";
+    public static final String MESSAGE_DUPLICATE_GAMERTAG = "This gamertag is already used by someone in Blockbook.";
 
     private final Gamer toAdd;
 
@@ -53,11 +42,12 @@ public class AddCommand extends Command {
         requireNonNull(model);
 
         if (model.hasPerson(toAdd)) {
-            throw new CommandException(MESSAGE_DUPLICATE_PERSON);
+            throw new CommandException(MESSAGE_DUPLICATE_GAMERTAG);
         }
 
         model.addGamer(toAdd);
-        return new CommandResult(String.format(MESSAGE_SUCCESS, Messages.format(toAdd)));
+        String formattedContact = toAdd.getName() + ", " + toAdd.getGamerTag();
+        return new CommandResult(String.format(MESSAGE_SUCCESS, formattedContact));
     }
 
     @Override
@@ -82,4 +72,3 @@ public class AddCommand extends Command {
                 .toString();
     }
 }
-
