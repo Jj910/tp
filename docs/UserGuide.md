@@ -52,13 +52,13 @@ BlockBook makes it easy to manage the contacts of other gamers you meet on serve
 **Notes about the command format:**<br>
 
 * Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
-  e.g. in `add name/NAME`, `NAME` is a parameter which can be used as `add name/John Doe`.
+  * e.g. in `add name/NAME`, `NAME` is a parameter which can be used as `add name/John Doe`.
 
 * Items in square brackets are optional.<br>
-  e.g `name/NAME [t/TAG]` can be used as `name/John Doe t/friend` or as `name/John Doe`.
+  * e.g `name/NAME [t/TAG]` can be used as `name/John Doe t/friend` or as `name/John Doe`.
 
-* Items with `â€¦`â€‹ after them can be used multiple times including zero times.<br>
-  e.g. `[t/TAG]â€¦â€‹` can be used as `Â ` (i.e. 0 times), `t/friend`, `t/friend t/family` etc.
+* Items with `…`​ after them can be used multiple times including zero times.
+  * e.g. `[t/TAG]…​` can be used as ` ` (i.e. 0 times), `t/friend`, `t/friend t/family` etc.
 
 * Parameters can be in any order.<br>
   e.g. if the command specifies `name/NAME gamertag/GAMERTAG`, `gamertag/GAMERTAG name/NAME` is also acceptable.
@@ -80,7 +80,7 @@ Format: `help`
 
 Adds a Gamer to BlockBook.
 
-Format: `add name/NAME gamertag/GAMERTAG e/EMAIL a/ADDRESS [t/TAG]â€¦â€‹`
+Format: `add name/NAME gamertag/GAMERTAG e/EMAIL a/ADDRESS [t/TAG]`
 
 <box type="tip" seamless>
 
@@ -101,13 +101,13 @@ Format: `list`
 
 Edits an existing Gamer stored in BlockBook.
 
-Format: `edit INDEX [name/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]â€¦â€‹`
+Format: `edit INDEX [name/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]`
 
-* Edits the Gamer at the specified `INDEX`. The index refers to the index number shown in the displayed Gamer list. The index **must be a positive integer** 1, 2, 3, â€¦â€‹
+* Edits the Gamer at the specified `INDEX`. The index refers to the index number shown in the displayed Gamer list. The index **must be a positive integer** 1, 2, 3, 
 * At least one of the optional fields must be provided.
 * Existing values will be updated to the input values.
 * When editing tags, the existing tags of the Gamer will be removed i.e adding of tags is not cumulative.
-* You can remove all the gamerâ€™s tags by typing `t/` without
+* You can remove all the gamer's tags by typing `t/` without
     specifying any tags after it.
 
 Examples:
@@ -140,7 +140,7 @@ Format: `delete INDEX`
 
 * Deletes the Gamer at the specified `INDEX`.
 * The index refers to the index number shown in the displayed Gamer list.
-* The index **must be a positive integer** 1, 2, 3, â€¦â€‹
+* The index **must be a positive integer** 1, 2, 3, 
 
 Examples:
 * `list` followed by `delete 2` deletes the 2nd Gamer shown in the list.
@@ -197,10 +197,10 @@ _Details coming soon ..._
 
 | Action     | Format, Examples                                                                                                                                                      |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Add**    | `add name/NAME gamertag/GAMERTAG e/EMAIL a/ADDRESS [t/TAG]â€¦â€‹` <br> e.g., `add name/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague` |
+| **Add**    | `add name/NAME gamertag/GAMERTAG e/EMAIL a/ADDRESS [t/TAG]` <br> e.g., `add name/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague` |
 | **Clear**  | `clear`                                                                                                                                                               |
 | **Delete** | `delete INDEX`<br> e.g., `delete 3`                                                                                                                                   |
-| **Edit**   | `edit INDEX [name/NAME] [gamertag/GAMERTAG] [e/EMAIL] [a/ADDRESS] [t/TAG]â€¦â€‹`<br> e.g.,`edit 2 name/James Lee e/jameslee@example.com`                                           |
+| **Edit**   | `edit INDEX [name/NAME] [gamertag/GAMERTAG] [e/EMAIL] [a/ADDRESS] [t/TAG]`<br> e.g.,`edit 2 name/James Lee e/jameslee@example.com`                                           |
 | **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`                                                                                                            |
 | **List**   | `list`                                                                                                                                                                |
 | **Help**   | `help`                                                                                                                                                                |
