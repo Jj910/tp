@@ -284,12 +284,12 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a ...                     | I want to ...                                            | So that I can...                                                        |
-|----------|-----------------------------|---------------------------------------------------------|------------------------------------------------------------------------|
+| Priority | As a ...                     | I want to ...                                            | So that I can...                                                       |
+|----------|-----------------------------|---------------------------------------------------------|-----------------------------------------------------------------------|
 | `* * *`  | general user                | add a new contact                                       | link multiple contact methods to a gamer                              |
-| `* * *`  | general user                | delete a gamer                                         | remove contact entries that I no longer need                           |
-| `* * *`  | general user                | list out my contacts                                    | see my contacts that I saved previously                                |
-| `* * *`  | general user                | view a contact’s profile with their full details        | access comprehensive details when needed                               |
+| `* * *`  | general user                | delete a gamer                                         | remove contact entries that I no longer need                          |
+| `* * *`  | general user                | list out my contacts                                    | see my contacts that I saved previously                               |
+| `* * *`  | general user                | view a contact’s profile with their full details        | access comprehensive details when needed                              |
 | `* *`    | general user                | find a gamer by name                                   | locate details of gamers without having to go through the entire list |
 | `* *`    | new user                    | see usage instructions                                  | figure out how to use the app easily                                  |
 | `* *`    | general user                | update contact details                                  | keep track of my contacts' latest information                         |
