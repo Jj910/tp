@@ -100,6 +100,7 @@ Format: `list`
 ### Editing a Gamer : `edit`
 
 Edits an existing Gamer stored in BlockBook.
+**TAKE NOTE!** This command does not allow the editing of fields that do not exist, such as `p/`, `e/`, `a/` etc. These fields are a work in progress.
 
 Format: `edit INDEX [name/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]`
 
