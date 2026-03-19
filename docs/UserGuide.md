@@ -141,7 +141,7 @@ Format: `delete INDEX`
 
 * Deletes the Gamer at the specified `INDEX`.
 * The index refers to the index number shown in the displayed Gamer list.
-* The index **must be a positive integer** 1, 2, 3, 
+* The index **must be a positive integer** 1, 2, 3, ...
 
 Examples:
 * `list` followed by `delete 2` deletes the 2nd Gamer shown in the list.
