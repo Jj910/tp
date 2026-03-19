@@ -195,13 +195,13 @@ _Details coming soon ..._
 
 ## Command summary
 
-| Action     | Format, Examples                                                                                                                                                      |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Add**    | `add name/NAME gamertag/GAMERTAG e/EMAIL a/ADDRESS [t/TAG]` <br> e.g., `add name/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague` |
-| **Clear**  | `clear`                                                                                                                                                               |
-| **Delete** | `delete INDEX`<br> e.g., `delete 3`                                                                                                                                   |
-| **Edit**   | `edit INDEX [name/NAME] [gamertag/GAMERTAG] [e/EMAIL] [a/ADDRESS] [t/TAG]`<br> e.g.,`edit 2 name/James Lee e/jameslee@example.com`                                           |
-| **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`                                                                                                            |
-| **List**   | `list`                                                                                                                                                                |
-| **Help**   | `help`                                                                                                                                                                |
+| Action     | Format, Examples                                                                                                                                        |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Add**    | `add name/NAME gamertag/GAMERTAG` <br> e.g., `add name/James Ho gamertag/JamieH` |
+| **Clear**  | `clear`                                                                                                                                                 |
+| **Delete** | `delete INDEX`<br> e.g., `delete 3`                                                                                                                     |
+| **Edit**   | `edit INDEX [name/NAME] [gamertag/GAMERTAG] [e/EMAIL] [a/ADDRESS] [t/TAG]`<br> e.g.,`edit 2 name/James Lee e/jameslee@example.com`                      |
+| **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`                                                                                              |
+| **List**   | `list`                                                                                                                                                  |
+| **Help**   | `help`                                                                                                                                                  |
 
